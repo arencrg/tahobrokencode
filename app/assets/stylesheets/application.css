@@ -1,0 +1,447 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+@import url('https://fonts.googleapis.com/css?family=Bitter|PT+Sans');
+ 
+ /* adjust body when menu is open */
+
+
+
+
+li, h1, h2. h3, h4 {
+	font-family: 'PT Sans', sans-serif;
+	font-weight: bold;
+	font-size: 18px;
+}
+
+p {
+	font-family: 'Bitter', serif;
+	font-size: 14px;
+	line-height: 120%;
+}
+
+
+#header {
+  background: #20C0D3;
+  width: 100%;
+  }
+ 
+#landingimg {
+	display: inline-block;
+	text-align: center;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+
+ html {
+ 	    min-height: 1vh;
+        background: white;
+        color: black;
+ }
+ 
+    body {
+        margin: 0;
+        padding: 0;
+    }
+    
+    
+    .navbar-link li:hover {
+    border-bottom: black solid 5px !important;
+    margin-bottom: 0;
+    color: white;
+    background: #FDD232 ;
+	}
+	
+    
+    
+    no-js #loader { display: none;  }
+.js #loader { display: white; position: absolute; left: 100px; top: 0; }
+.se-pre-con {
+	position: fixed;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	height: 100%;
+	z-index: 9999;
+	background: url('https://media.giphy.com/media/l41K08bjl4X5ONEf6/giphy.gif') center no-repeat white;
+}
+
+    
+body.slide-active {
+    overflow-x: hidden;
+}
+/*first child of #page-content so it doesn't shift around*/
+.no-margin-top {
+    margin-top: 0px!important;
+}
+/*wrap the entire page content but not nav inside this div if not a fixed top, don't add any top padding */
+#page-content {
+    position: relative;
+    padding-top: 70px;
+    left: 0;
+    background: white;
+    color: black;
+    display: inline-block;
+    text-align: center;
+    width: 100%;
+    padding-bottom: 10px;
+	margin: 0 0 0 0;
+}
+#page-content.slide-active {
+    padding-top: 0
+}
+
+/* put toggle bars on the left :: not using button */
+#slide-nav .navbar-toggle {
+    cursor: pointer;
+    position: relative;
+    line-height: 0;
+    float: left;
+    margin: 0;
+    width: 30px;
+    height: 50px;
+    padding: 10px 10px 0 10px;
+    border: 0;
+    color: black;
+}
+/* icon bar prettyup - optional */
+#slide-nav .navbar-toggle > .icon-bar {
+    width: 100%;
+    display: block;
+    height: 3px;
+    margin: 5px 0 0 0;
+     color: black;
+}
+#slide-nav .navbar-toggle.slide-active {
+    background: inherit;
+}
+.navbar-header {
+    position: relative;
+}
+
+
+a, a:hover, a:active, a:visited {
+    background: inherit;
+    color: inherit;
+    text-decoration: none;
+}
+
+#logo {
+    height: 40px;
+}
+
+#infostuff {
+    padding: 10px 4% 10px 4%;
+    margin-bottom: 20px
+}
+
+.forminput {
+	color: black;
+	background: #FDD232;
+	width: 55%;
+}
+
+#profpic {
+	width: 100px;
+}
+
+   #buttonpress {
+    	padding: 10px 20px 10px 20px;
+    	color: black;
+    	background: #FDD232;
+    	border-radius: 40px;
+    }
+    
+    
+    #taho1 {
+    	width: 90%;
+		display: inline-block;
+		text-align: center;
+    }
+
+
+#aboutelmusal {
+	padding: 0 20px 20px 20px;
+	background:  #20C0D3;
+}
+
+#aboutelmusal h3 {
+	color: white;
+	padding-top: 40px;
+	font-size: 26px !important;
+}
+#aboutelmusal p {
+	font-size: 16px !important;
+	line-height: 120%;
+	color: black;
+	padding: 0 10% 0 10%;
+
+}
+
+#contact {
+	padding: 10px 20px 10px 20px;
+	font-size: 12px;
+	background: #FDD232;
+}
+
+#contact h3 {
+	font-size: 18px;
+}
+
+#contact p {
+	font-size: 14px;
+}
+
+
+
+
+
+
+
+/* screw writing importants and shit, just stick it in max width since these classes are not shared between sizes */
+@media (max-width:767px) { 
+    
+        body {
+        margin: 0;
+        padding: 0;
+        background: #20C0D3;
+    }
+    
+    a, a:hover, a:active, a:visited {
+    background: inherit;
+    color: inherit;
+    text-decoration: none;
+}
+
+#header {
+  background: #20C0D3;
+  width: 100%;
+  margin: 80px 0 90px 0;
+  }
+ 
+#landingimg {
+    width: 100%;
+    margin: 0;
+}
+
+
+    
+	#slide-nav .container {
+	    margin: 0!important;
+	    padding: 0!important;
+        height:100%;
+	}
+	#slide-nav .navbar-header {
+	    margin: 0 auto;
+	    padding: 0 15px;
+	}
+	#slide-nav .navbar.slide-active {
+	    position: absolute;
+	    width: 80%;
+	    top: -1px;
+	    z-index: 1000;
+	    background: inherit;
+	}
+	#slide-nav #slidemenu {
+	    background: black;
+	    left: -100%;
+	    width: 80%;
+	    min-width: 0;
+	    position: absolute;
+	    padding-left: 0;
+	    z-index: 2;
+	    top: -8px;
+	    margin: 0;
+	}
+	#slide-nav #slidemenu .navbar-nav {
+	    min-width: 0;
+	    width: 100%;
+	    margin: 0;
+	    background: black;
+	    height: 100%;
+	}
+	#slide-nav #slidemenu .navbar-nav li a {
+	    min-width: 0;
+	    width: 90%;
+        background: black;
+	}
+	
+	#slidemenu li {
+    padding: 40px 10px 10px 10px;
+    line-height: 110%
+	}
+	
+	#slide-nav {
+	    border-top: 0
+	}
+	#slide-nav.navbar #slidemenu {
+	    background: white;
+	}
+
+	#slide-nav .navbar-form {
+	    width: 100%;
+	    margin: 8px 0;
+	    text-align: center;
+	    overflow: hidden;
+	    /*fast clearfixer*/
+	}
+	#slide-nav .navbar-form .form-control {
+	    text-align: center
+	}
+	#slide-nav .navbar-form .btn {
+	    width: 100%
+	}
+	#slidemenu {
+        background: black;
+        max-height: 100%;
+	}
+	
+	
+		#navbar-height-col {
+	    position: fixed;
+	    top: 0;
+	    height: 100%;
+      bottom:0;
+	    width: 80%;
+	    left: -80%;
+	    background: black;
+	}
+
+    
+#logo {
+    height: 70px;
+    background: white;
+    padding: 12px 12px 12px 12px;
+    border-radius: 40px;
+}
+
+.navbar-link {
+    color: white !important;
+    text-transform: uppercase;
+    font-size: 22px;
+    padding: 40px 0 30px 10px;
+    line-height: 160%
+}
+
+    
+
+}
+
+
+
+
+
+
+
+
+
+
+
+@media (min-width:768px) { 
+    
+    body {
+        margin: 0;
+        padding: 0;
+        background: #20C0D3;
+    }
+    
+	#page-content {
+	    left: 0!important
+	    width: 100%;
+		margin: 0 0 0 0;
+
+	}
+	.navbar.navbar-fixed-top.slide-active {
+	    position: fixed
+	}
+	.navbar-header {
+	    left: 0!important
+	    background: black;
+	    z-index: 99;
+	}
+	
+	.navbar {
+	    height: 55px;
+	    background-color: white;
+	    z-index: 999;
+	}
+	
+.navbar-link li:hover {
+    border-bottom: black solid 5px;
+    margin-bottom: 0;
+    color: white;
+    background: #FDD232 ;
+	}
+	
+	
+	a, a:hover, a:visited, a:active {
+	    color: inherit;
+	    text-decoration: none;
+	    
+	}
+	
+#dashinfo {
+    text-align: left;
+}
+
+
+#header {
+  background: #20C0D3;
+  width: 100%;
+  }
+ 
+#landingimg {
+	display: inline-block;
+	text-align: center;
+    width: 50%;
+    margin: 0;
+    padding: 0;
+}
+#whatistaho {
+	padding: 100px 20px 20px 20px;
+	margin-bottom: 100px
+}
+
+#whatistaho p {
+	font-size: 14px;
+}
+
+#aboutelmusal {
+padding: 0 20px 10px 20px;
+margin-bottom: 60px;
+}
+
+#aboutelmusal h3 {
+font-size: 22px;
+}
+
+#aboutelmusal p {
+	display: inline-block;
+	font-size: 16px !important;
+	line-height: 140%;
+}
+
+
+#profilepart {
+	background: white;
+	padding: 0 10px 20px 10px;
+	margin: 0 2% 0 2%;
+	color: black;
+}
+
+}

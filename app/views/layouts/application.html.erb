@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+<head>
+  <title>El Musal</title>
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+    <%= csrf_meta_tags %>
+    
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link href="https://code.jquery.com/ui/1.12.1/themes/pepper-grinder/jquery-ui.css" rel="stylesheet">
+    <link href="https://cdn.rawgit.com/dubrox/Multiple-Dates-Picker-for-jQuery-UI/master/jquery-ui.multidatespicker.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <meta charset="UTF-8">
+
+</head>
+
+<body id="page-top" data-spy="scroll" data-target=".navbar" data-offset="50">
+
+ <div class="navbar navbar-fixed-top" role="navigation" id="slide-nav">
+  <div class="container">
+   <div class="navbar-header">
+    <a class="navbar-toggle"> 
+      <span class="sr-only">Toggle navigation</span>
+          <img src = "https://image.flaticon.com/icons/svg/258/258907.svg" id="logo"/>
+    </a>
+   </div>
+   <div id="slidemenu">
+        <ul class="nav navbar-nav navbar-right">
+              <li><%= link_to "Home", root_path, :class => 'navbar-link' %></li>
+              <li><a href = "#whatistaho" class = "navbar-link">What is taho?</a></li>
+              <li><a href = "#aboutelmusal" class = "navbar-link">About El Musal and Taho Po</a></li>
+              <li><a href = "#contact" class = "navbar-link">Contact Us</a></li>
+          <% if user_signed_in? %>
+              <li><%= link_to "Dashboard", current_user, :class => 'navbar-link'  %></li>
+              <li><%= link_to "Sign Out", destroy_user_session_path, method: :delete, :class => 'navbar-link'  %> </li>
+          <% else %>
+              <li><%= link_to "Login", new_user_session_path, :class => 'navbar-link' %></li>
+              <li><%= link_to "Sign Up", new_user_registration_path, :class => 'navbar-link' %></li>
+          <% end %>
+        </ul>
+          
+   </div>
+  </div>
+ </div>
+
+ 
+<div class = "container" id="page-content">
+  
+<%= yield %>  
+  
+</div>
+
+<script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js" integrity="sha256-T0Vest3yCU7pafRw9r+settMBX6JkKN06dqBnpQ8d30=" crossorigin="anonymous"></script>
+<script src="https://cdn.rawgit.com/dubrox/Multiple-Dates-Picker-for-jQuery-UI/master/jquery-ui.multidatespicker.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+<script>
+</script>
+
+</body>
+</html>
