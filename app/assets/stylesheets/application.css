@@ -156,6 +156,14 @@ a, a:hover, a:active, a:visited {
 	width: 55%;
 }
 
+.delidatesinput {
+	color: black;
+	background: #FDD232;
+	width: 70%;
+	height: 60px;
+}
+
+
 #profpic {
 	width: 100px;
 }
