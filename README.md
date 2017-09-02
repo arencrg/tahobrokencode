@@ -1,4 +1,6 @@
-#TAHO PO BY EL MUSAL
+(I know, I know -- the name *is* misleading, but only cause Cloud9 was buggy that day and I thought I had completely fucked up my code. But hey, as long as it works, who cares right?)
+
+# TAHO PO BY EL MUSAL
 
 El Musal is the result my week-long fever dream of owning a breakfast-first (and -only) food service, and Taho Po! is the first product from the lineup.
 
@@ -17,8 +19,8 @@ You can view the live wireframe [here.](https://www.figma.com/file/bcgxR7itxJUM9
 
 - Aug 16 2017 - PROGRESS, ACTUAL, REAL PROGRESS (I'm proud of you, man.)
 
-- Aug 17 2017 - Finishing touches on the presentation, a bit of practice
+- Aug 17 2017 - Finishing touches on the presentation, a bit of practice.
 
 ## TO DO
 
-- Functionality still a bit lacking (it's still a static map, so...), please fix if you have the time
+- Functionality still a bit lacking (it's still a static map, so...), please fix if you have the time :-)
